@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrickWorld – LEGO Online Store</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>BrickWorld</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Your World of LEGO Awaits</h2>
+        <p>Buy original LEGO sets delivered to your door.</p>
+        <a class="button" href="#products">Shop Now</a>
+    </section>
+
+    <section id="products">
+        <h2>Featured LEGO Sets</h2>
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="lego1.jpg" alt="LEGO Set 1">
+                <h3>LEGO Star Wars X-Wing</h3>
+                <p>$79.99</p>
+                <button onclick="addToCart('LEGO Star Wars X-Wing', 79.99)">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="lego2.jpg" alt="LEGO Set 2">
+                <h3>LEGO City Police Station</h3>
+                <p>$99.99</p>
+                <button onclick="addToCart('LEGO City Police Station', 99.99)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="lego3.jpg" alt="LEGO Set 3">
+                <h3>LEGO Harry Potter Castle</h3>
+                <p>$129.99</p>
+                <button onclick="addToCart('LEGO Harry Potter Castle', 129.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p>
+        <button class="checkout-button">Checkout via Email</button>
+        <p style="font-size: 14px;">(This will prepare an email order message.)</p>
+    </section>
+
+    <section id="about">
+        <h2>About BrickWorld</h2>
+        <p>We provide genuine LEGO sets with fast worldwide shipping.</p>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: support@yourdomain.com</p>
+        <p>© 2025 BrickWorld LEGO Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
